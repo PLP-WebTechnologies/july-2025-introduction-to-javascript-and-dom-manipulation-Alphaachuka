@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+    color: #34495e;
+}
+
+/* Special style when section is cleared */
+h2.cleared {
+    color: #e74c3c;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 48%;
+    padding: 12px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+button:first-of-type {
+    background-color: #2980b9; /* Check */
+}
+button:first-of-type:hover {
+    background-color: #1c5980;
+}
+
+button:last-of-type {
+    background-color: #e74c3c; /* Clear */
+}
+button:last-of-type:hover {
+    background-color: #c0392b;
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    min-height: 24px;
+    transition: opacity 0.4s ease;
+}
+
+/* Section containers  */
+#nameOptionsContainer,
+#ageOptionsContainer {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Different background colors for distinction */
+#nameOptionsContainer {
+    background: #fef5e7; /* light orange */
+    color: #d35400;
+}
+#ageOptionsContainer {
+    background: #ebf5fb; /* light blue */
+    color: #21618c;
+}
+
+/* List styling */
+#nameOptionsContainer ul,
+#ageOptionsContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#nameOptionsContainer li,
+#ageOptionsContainer li {
+    list-style-type: none;
+    background: #fff;
+    padding: 8px 10px;
+    margin: 6px 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* Hover effects */
+#nameOptionsContainer li:hover {
+    transform: translateX(5px);
+    background: #fdebd0;
+}
+#ageOptionsContainer li:hover {
+    transform: translateX(5px);
+    background: #d6eaf8;
+}

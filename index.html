@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Age checker</title>
+</head>
+<body>
+
+    <h1>Check if a person is eligible to vote</h1>
+
+    <label for = "nameInput">Enter your name</label>
+    <input type="text" id="nameInput" placeholder="Your name here...">
+
+    <label for="ageInput">Enter your age</label>
+    <input type="number" id="ageInput" placeholder="Your age here...">
+
+    <button onclick="checkAge()">Check</button><br><br>
+    <button onclick="clearInputs()">Clear</button>
+
+    <p id="result"></p>
+
+    <h2>Sample Names</h2>
+    <div id="nameOptionsContainer"></div>
+
+    <h2>Sample Voting Ages</h2>
+    <div id="ageOptionsContainer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
